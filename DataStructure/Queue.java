@@ -1,3 +1,5 @@
+package DataStructure;
+
 class QueueType {
 	int front = 0;
 	int rear = 0;

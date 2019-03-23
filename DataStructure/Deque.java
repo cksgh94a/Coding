@@ -1,3 +1,5 @@
+package DataStructure;
+
 class Node {
 	private Node before;
 	private Node next;

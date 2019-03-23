@@ -1,3 +1,5 @@
+package DataStructure;
+
 class StackType {
 	int index = -1;
 	int size;
