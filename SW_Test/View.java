@@ -1,6 +1,8 @@
-// 배열 이용 Deque
+// 1206. [S/W 문제해결 기본] 1일차 - View
 
-package DataStructure;
+package SW_Test;
+
+import java.util.Scanner;
 
 class vQueue {
         private int[] queue = {0, 0, 0, 0, 0, 0};
@@ -39,20 +41,16 @@ class vQueue {
         }
 }
 
-public class Deque {
+public class View {
+// public class Solution {
 	public static void main(String[] args) {
-                vQueue v = new vQueue();
-                for (int i = 0; i < 6; i++) {
-                        v.enq(i);
-                }
-                for (int i = 0; i < 3; i++) {
-                        System.out.println(v.deq());
-                }
-                v.enq(10);
-                v.enq(51);
-                v.enq(62);
-                for (int i = 0; i < 6; i++) {
-                        System.out.println(v.deq());
-                }
+                Scanner sc = new Scanner(System.in);
+                int bCount = Integer.valueOf(sc.nextLine());
+                String[] bLine = sc.nextLine().split(" ");
+                for (String building : bLine ){
+                        System.out.println(building);
+                }            
+
+                sc.close();
 	}
 }

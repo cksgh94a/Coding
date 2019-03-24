@@ -1,0 +1,9 @@
+
+*** 오류 없는데 "Build failed, do you want to continue?" ***
+
+Clean the workspace directory
+In some occasions, deleting the Java Language Server workspace directory is helpful to go back to a clean slate. Generally speaking, on the different platforms, the VS Code user workspace storage area can be found under these locations :
+
+Windows : %APPDATA%\Code[ - Variant]\User\workspaceStorage\
+MacOS : $HOME/Library/Application Support/Code[ - Variant]/User/workspaceStorage/
+Linux : $HOME/.config/Code[ - Variant]/User/workspaceStorage/
