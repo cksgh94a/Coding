@@ -37,14 +37,14 @@ public class Flatten {
 
 
         public static int count(int dump){
-                quickSort(0, box.length);
+                quickSort(0, 99);
 
                 int temp;
-                int topIndex = box.length;
+                int topIndex = 99;
                 int botIndex = 0;
 
                 for (int i = 0; i < dump; i++) {
-                        box[box.length]--;
+                        box[99]--;
                         box[0]++;
                         while (box[topIndex] < box[topIndex-1]) {
                                 temp = box[topIndex];
@@ -58,7 +58,7 @@ public class Flatten {
                                 box[botIndex+1] = temp;
                                 botIndex++;
                         }
-                        topIndex = box.length;
+                        topIndex = 99;
                         botIndex = 0;
 
                         if ((box[topIndex] - box[botIndex]) == 1) break;
@@ -76,13 +76,9 @@ public class Flatten {
                         int dump = Integer.valueOf(sc.nextLine());
                         String[] list = sc.nextLine().split(" ");
 
-                        box = new int[list.length];
+                        box = new int[100];
                         
-                        for (int j = 0; j < list.length; j++) {
-                                System.out.println(list[j]);
-                                box[j] = Integer.parseInt(list[j]);
-                                System.out.println("int = " + list[j]);
-                        }
+                        for (int j = 0; j < 100; j++) box[j] = Integer.parseInt(list[j]);
                         result[i] = count(dump);
                         System.out.println("#" + (i+1) + " " + result[i]);       
                 }
