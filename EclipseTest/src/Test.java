@@ -13,7 +13,6 @@ public class Test {
 	}
 	
 	public static void main(String[] args) {
-		int answer = 0;
 		int[] numbers = {1,1,1,1,1};
 		int target = 3;
 		
