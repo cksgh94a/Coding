@@ -1,4 +1,8 @@
-public class Test {
+// 코딩테스트 연습 - 완전탐색 - 타겟 넘버
+
+package Programmers;
+
+public class DFS {
 	static int[] n;
 	static int t, r;
 	
@@ -24,5 +28,4 @@ public class Test {
 		
 		System.out.println(r);
 	}
-
 }
